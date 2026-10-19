@@ -6,13 +6,7 @@
 
 The notebook uses Newtonian gravity and the forward Euler method to simulate an idealized 365-day Earth–Sun orbit with one-hour time steps. It calculates the gravitational acceleration, advances position and velocity, and plots the resulting trajectory.
 
-The acceleration is
-
-\[
-\mathbf a(\mathbf r)=-\frac{GM_\odot}{|\mathbf r|^3}\mathbf r,
-\]
-
-with the Sun fixed at the origin. The initial speed is set to the circular-orbit value \(v=\sqrt{GM_\odot/r_0}\).
+With the Sun fixed at the origin, the acceleration is `a(r) = -G M_sun r / |r|^3`. The initial speed is set to the circular-orbit value `v = sqrt(G M_sun / r_0)`.
 
 ## Run it
 
@@ -22,7 +16,7 @@ with the Sun fixed at the origin. The initial speed is set to the circular-orbit
 
 ## Scope and limitations
 
-This is a learning-stage numerical model, not a validated ephemeris or general N-body simulator. The Sun is fixed, only one orbiting body is modeled, and forward Euler is not symplectic: numerical error can accumulate and orbital energy is not conserved. The notebook's plot should be interpreted with those limitations in mind.
+This is a learning-stage numerical model, not a validated ephemeris or general N-body simulator. The Sun is fixed, only one orbiting body is modeled, and forward Euler is not symplectic: numerical error can accumulate and orbital energy is not conserved. Interpret the notebook's plot with those limitations in mind.
 
 ## Planned work
 
